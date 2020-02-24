@@ -4,6 +4,7 @@ body {
 .container {
   display: block;
   margin: 0 auto;
+  background-image: url(/../media/cork.jpg);
 }
 .app {
   padding: 20px 30px 0px;
@@ -14,9 +15,6 @@ body {
   border-style: solid;
 }
 
-.container {
-  background-color: white;
-}
 .card {
   border: none;
 }
@@ -85,7 +83,7 @@ a {
 }
 footer {
   color: #4eae53;
-  text-align: right;
+  text-align: center;
   padding: 0px;
 }
 
