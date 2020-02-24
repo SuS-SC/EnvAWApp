@@ -55,6 +55,7 @@ h6 {
 .currentWeatherInfo {
   padding: 0px;
   margin: 0 auto;
+  background-color: white;
 }
 
 .weatherParameter {
@@ -64,6 +65,7 @@ h6 {
   list-style-type: none;
   margin: 0 auto;
   padding: 100px 0px 0px;
+  background-color: white;
 }
 p {
   font-size: 20px;
