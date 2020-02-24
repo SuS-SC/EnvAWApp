@@ -49,12 +49,13 @@ h6 {
 
 .locationTime {
   display: block;
-  padding: 20px;
+  padding: 0px;
   margin: 0 auto;
 }
 .currentWeatherInfo {
   padding: 0px;
   margin: 0 auto;
+  background-color: white;
 }
 
 .weatherParameter {
