@@ -12,7 +12,6 @@ body {
   border-style: solid;
   border-width: 3px;
   border-style: solid;
-  background-image: url(/../media/cork-board.jpg);
 }
 
 .card {
@@ -55,7 +54,6 @@ h6 {
 .currentWeatherInfo {
   padding: 0px;
   margin: 0 auto;
-  background-color: white;
 }
 
 .weatherParameter {
