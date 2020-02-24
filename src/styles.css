@@ -17,6 +17,7 @@ body {
 
 .card {
   border: none;
+  background-image: url(/../media/cork-board.jpg);
 }
 
 h3 {
