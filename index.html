@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Environment Awareness Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Fjord+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles.css">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<!-- App -->
+<body>
+<!--grid for current weather for current time and city-->
+  <div class="container">
+    <div class="app">
+<div class="card">
+    <div class="container" class="locationTime">
+  <div class="row">
+    <div class="col" id="location">
+  <h3>Where?
+  </h3>
+    </div>
+    <div class="w-100">
+    </div>
+    <div class="col">
+<h5 id="current-date"></h5>
+    </div>
+  </div>
+<div class=w-100></div>
+
+<div class="container" class="currentWeatherInfo">
+  <div class="row">
+<div class="card-group">
+  <div class="card">
+    <img src="media/sunnycolor.png" class="card-img-top" alt="Sunny Day">
+    <div class="card-body">
+      <h5 class="card-title text-center" id= "description"></h5>
+    </div>
+  </div>
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">
+        <ul class="weatherParameter">	
+          <li>Temperature: <span id="temp-value-C"></span>|<span id=temp-value-F></span>
+         </li>
+				  <li>
+					Humidity: <span id="humid-value"></span>
+					</li>
+			    <li>
+					Wind: <span id ="wind-values"></span>
+					</li>
+				 <li> UV index: <span id= "uv-value"></span> 
+         </li>
+        </ul>
+      </h5>
+    </div>
+    <div class="card-body text-center" id="natureDay">
+      <p class="card-title"> Always a good time to plant a tree!</p>
+      </div>
+  </div>
+  <div class="card">
+    <img src="media/tree.png" class="card-img-top" alt="Tree">
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- grid for interactive forecast for next days and search for other places+footer-->
+<div class="container">
+<div class="row">
+<div class="col">
+<h5> Next days:</h5>
+</div>
+<div class="row w-100"></div>
+<div class="card-deck">
+  <div class="card width-auto">
+ <img src="media/sunnycolor.png" class="card-img-top" alt="Sunny Day">
+    <div class="card-body">
+      <a href="" ><h6 class="card-title text-center">Sun</h6></a>
+    </div>
+  </div>
+  <div class="card width-auto">
+<img src="media/sunnycolor.png""  class="card-img-top" alt="Sunny Day">
+    <div class="card-body">
+     <a href=""> <h6 class="card-title text-center">Mon</h6> </a>
+    </div>
+  </div>
+  <div class="card width-auto">
+     <img src="media/cloudycolodayr.png" class="card-img-top" alt="Cloudy Day">
+    <div class="card-body">
+      <a href=""><h6 class="card-title text-center">Tue</h6></a>
+    </div>
+  </div>
+<div class="card width-auto">
+ <img src="media/supercloudycolorday.png" class="card-img-top" alt="Super Cloudy Day">
+    <div class="card-body">
+      <a href=""><h6 class="card-title text-center">Wed</h6></a>
+    </div>
+  </div>
+<div class="card width-auto">
+   <img src="media/cloudyraincolorday.png" class="card-img-top" alt="Cloudy Rainy Day">
+    <div class="card-body">
+      <a href=""><h6 class="card-title text-center">Thu</h6></a>
+    </div>
+  </div>
+  <div class="col-auto">
+<div class="card width-auto">
+  <div class="searchBar">
+  <div class="card-body">
+    <form id="city-form">
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+<img src="media/keyboard-24186_1280.png" width=35px">
+          </div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Type another city">
+<button type="submit" class="btn btn-outline-success" id="city-button">
+<img src="media/glass-305547_1280.png" width="20px">
+</button>
+</form></div> <button type="click" class="btn btn-outline-success"  class="currentLocation" id="current-location">
+<img src="media/tracker-1093167_1280.png" width="15px"> Current Location
+</button> </div>
+    
+<div class="row w-100"></div>
+<footer>
+  <span id="EnvAWAp">
+  Environment Awareness Weather App
+  </span>
+</br>
+    Developed by Susana Soares for SheCodes Plus
+    </footer>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="src/index.js"></script>
+</body>
+</html>

@@ -1,2 +1,0 @@
-# EnvAWApp
-Created with CodeSandbox

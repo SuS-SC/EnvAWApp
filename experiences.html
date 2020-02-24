@@ -1,0 +1,68 @@
+<div class="col">
+    <form>
+    <div class="col-auto">
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+<img src="media/keyboard-24186_1280.png" width=35px">
+          </div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Where to next? Type another city">
+      </div>
+      </div>
+    </div>
+    <div class="col-auto">
+<button type="submit" class="btn btn-outline-success">
+<img src="media/glass-305547_1280.png" width="20px">
+</button>
+    </div>
+<div class="col-auto">
+<button type="submit" class="btn btn-outline-success" class="currentLocation">
+<img src="media/tracker-1093167_1280.png" width="15px">
+</button>
+  </div>
+</form>
+</div>
+</div>
+<footer>
+    Developed by Susana Soares for SheCodes Plus
+    </footer>
+
+
+Today is World Planting Day!
+Go plant a tree!
+
+Lisbon, Portugal, Europe
+	color:#004445;
+
+</body>
+//challenge 3 Temperature
+let temperature = document.querySelector("#temperatureValue");
+
+function convertFtoC(event) {
+  event.preventDefault();
+  let celsius = Math.round((62.2 - 32) / 1.8);
+  temperature.innerHTML = `${celsius}`;
+}
+function convertCtoF(event) {
+  event.preventDefault();
+  let fahrenheit = Math.round(17 * 1.8 + 32);
+  temperature.innerHTML = `${fahrenheit}`;
+}
+let tempValueC = document.querySelector("#celsius-link");
+tempValueC.addEventListener("click", convertFtoC);
+let tempValueF = document.querySelector("#fahrenheit-link ");
+tempValueF.addEventListener("click", convertCtoF);
+
+
+
+let searchedCity = document.querySelector("#location");
+ if (searchCity.value) {
+    searchedCity.innerHTML = `${searchCity.value}`;
+  } else {
+    let homeCity = "Lisbon";
+    let lisbonUrl = `https://api.openweathermap.org/data/2.5/weather?q=${homeCity}&appid=c55a735461d1622ed3b65499c272f01c&units=metric`;
+    axios.get(lisbonUrl).then(showWeather);
+    searchedCity.innerHTML = `Lisbon, PT`;
+  }
+}

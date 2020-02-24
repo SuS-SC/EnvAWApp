@@ -1,0 +1,96 @@
+body {
+  font-family: "Fjord One", serif;
+}
+.container {
+  display: block;
+  margin: 0 auto;
+}
+.app {
+  padding: 20px 30px 0px;
+  margin: 0px;
+  border-color: #93c658;
+  border-style: solid;
+  border-width: 3px;
+  border-style: solid;
+  
+}
+
+.container {
+  background-color: white;
+}
+.card {
+  border: none;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 300;
+  color: #93c658;
+}
+#location {
+  font-size: 40px;
+  font-weight: 300;
+  color: #93c658;
+  text-transform: capitalize;
+}
+h4 {
+  padding: 20px;
+  color: #4eae53;
+  text-align: center;
+}
+h5 {
+  font-size: 19px;
+  color: #4eae53;
+}
+#description {
+  text-transform: capitalize;
+}
+h6 {
+  color: #4eae53;
+}
+
+.locationTime {
+  display: block;
+  padding: 0px;
+  margin: 0 auto;
+}
+.currentWeatherInfo {
+  padding: 0px;
+  margin: 0 auto;
+}
+
+.weatherParameter {
+  color: #93c658;
+  font-size: 23px;
+  font-weight: 400;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 100px 0px 0px;
+}
+p {
+  font-size: 20px;
+  color: #4eae53;
+  background-color: rgba(78, 174, 83, 0.25);
+  border-color: #4eae53;
+  border-width: 4px;
+  border-style: solid;
+  display: block;
+  margin: 0 auto;
+}
+a {
+  color: #4eae53;
+}
+#current-location {
+  display:block;
+margin: 0 auto;
+}
+footer {
+  color: #4eae53;
+  text-align: right;
+  padding: 0px;
+}
+
+#EnvAWAp {
+  color: #93c658;
+  font-weight: bold;
+}
