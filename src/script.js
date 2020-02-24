@@ -1,4 +1,3 @@
-let axios = require(`axios`).default;
 let now = new Date();
 console.log(now);
 let weekDays = [
@@ -287,7 +286,6 @@ function showWeather(response) {
 ${windSpeed}m/s
 ${windDegrees}`;
   //UV index in progress
- 
 }
 
 //images in progress
@@ -301,9 +299,7 @@ function citySearch(event) {
   searchCity.value = searchCity.value.toUpperCase();
   searchCity.value = searchCity.value.toLowerCase();
   let apiWeatherKey = "c55a735461d1622ed3b65499c272f01c";
-  let weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${
-    searchCity.value
-  }&appid=${apiWeatherKey}&units=metric`;
+  let weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${searchCity.value}&appid=${apiWeatherKey}&units=metric`;
   axios.get(`${weatherUrl}`).then(showWeather);
   if (searchCity.value === "") {
     alert("Please type a city");
