@@ -41,7 +41,7 @@ let date = document.querySelector("#current-date");
 date.innerHTML = `${weekDay}, ${day} ${month} ${year} ${timeHours}:${timeMinutes}`;
 
 //Holidays of Nature - transform in an array and call it (in progress)
-if ((`${month}` === `January`) & (`${day}` === `26`)) {
+if ((`${month}` === `March`) & (`${day}` === `4`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "International Day of Education!!";
   let educationDay = document.querySelector("#natureIcon");
@@ -122,7 +122,6 @@ if ((`${month}` === `March`) & (`${day}` === `22`)) {
   let educationDay = document.querySelector("#natureIcon");
   educationDay.src = `/media/drop_640.jpg`;
   educationDay.setAttribute("alt", `water`);
-
 }
 if ((`${month}` === `March`) & (`${day}` === `23`)) {
   let natureHoliday = document.querySelector("p");
@@ -137,7 +136,6 @@ if ((`${month}` === `April`) & (`${day}` === `7`)) {
   let educationDay = document.querySelector("#natureIcon");
   educationDay.src = `/media/health_640.jpg`;
   educationDay.setAttribute("alt", `health`);
-
 }
 if ((`${month}` === `April`) & (`${day}` === `10`)) {
   let natureHoliday = document.querySelector("p");
@@ -153,19 +151,21 @@ if ((`${month}` === `April`) & (`${day}` === `18`)) {
   educationDay.src = `/media/heritage_640.jpg`;
   educationDay.setAttribute("alt", `heritage`);
 }
-if ((`${month}` === `May`) & (`${day}` === `16`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "World Fish Migration Day!!";
-  let educationDay = document.querySelector("#natureIcon");
-  educationDay.src = `/media/fish_640.jpg`;
-  educationDay.setAttribute("alt", `migrating fish`);
-}
+
 if ((`${month}` === `April`) & (`${day}` === `22`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "Earth Day!!";
   let educationDay = document.querySelector("#natureIcon");
   educationDay.src = `/media/earth_640.jpg`;
   educationDay.setAttribute("alt", `earth`);
+}
+
+if ((`${month}` === `May`) & (`${day}` === `16`)) {
+  let natureHoliday = document.querySelector("p");
+  natureHoliday.innerHTML = "World Fish Migration Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/fish_640.jpg`;
+  educationDay.setAttribute("alt", `migrating fish`);
 }
 if ((`${month}` === `May`) & (`${day}` === `20`)) {
   let natureHoliday = document.querySelector("p");
@@ -269,7 +269,7 @@ if ((`${month}` === `October`) & (`${day}` === `2`)) {
   educationDay.src = `/media/farm_640.jpg`;
   educationDay.setAttribute("alt", `farm animals`);
 }
-}
+
 if ((`${month}` === `October`) & (`${day}` === `3`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Habitat Day!!";
