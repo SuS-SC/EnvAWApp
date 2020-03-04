@@ -7,7 +7,7 @@ body {
   border-style: ridge;
   border-color: #865324;
   border-width: 10px;
-  background-image: url(media/cork-board.jpg);
+  background-image: url(/../media/cork-board.jpg);
   background-size: initial;
 }
 
@@ -31,9 +31,10 @@ body {
   border-radius: 12px;
 }
 .card.notepad {
-  background-image: url(media\notepad.png);
+  background-image: url(media/cork-board.jpg);
+  display: block;
+  min-height: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
   border-right-color: #dadde1;
   border-left-color: #dadde1;
   border-style: double;
@@ -152,7 +153,7 @@ form {
   color: #633e1c;
   margin: 0px;
   padding: 10px 25px 35px 25px;
-  background-image: url(media/gree-postit.png);
+  background-image: url(/../media/green-postit.png);
   background-position: center;
   background-size: 100% 100%;
 }
