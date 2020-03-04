@@ -41,7 +41,7 @@ let date = document.querySelector("#current-date");
 date.innerHTML = `${weekDay}, ${day} ${month} ${year} ${timeHours}:${timeMinutes}`;
 
 //Holidays of Nature - transform in an array and call it (in progress)
-if ((`${month}` === `January`) & (`${day}` === `24`)) {
+if ((`${month}` === `January`) & (`${day}` === `26`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "International Day of Education!!";
 }
@@ -53,14 +53,6 @@ if ((`${month}` === `February`) & (`${day}` === `2`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Wetlands Day!!";
 }
-if ((`${month}` === `February`) & (`${day}` === `10`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "World Pulses Day!!";
-}
-if ((`${month}` === `February`) & (`${day}` === `11`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "International Day of Women and Girls in Science!!";
-}
 if ((`${month}` === `February`) & (`${day}` === `15`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Hippopotamus Day!!!";
@@ -69,10 +61,7 @@ if ((`${month}` === `February`) & (`${day}` === `20`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Day of Social Justice!!";
 }
-if ((`${month}` === `February`) & (`${day}` === `21`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "International Mother Language Day!!";
-}
+
 if ((`${month}` === `February`) & (`${day}` === `27`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "International Polar Bear Day!!!";
@@ -90,10 +79,7 @@ if ((`${month}` === `March`) & (`${day}` === `8`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "International Women's Day!!";
 }
-if ((`${month}` === `March`) & (`${day}` === `14`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "International Day for Action for Rivers!!";
-}
+
 if ((`${month}` === `March`) & (`${day}` === `15`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Consumer Rights Day!!";
@@ -104,7 +90,7 @@ if ((`${month}` === `March`) & (`${day}` === `18`)) {
 }
 if ((`${month}` === `March`) & (`${day}` === `20`)) {
   let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "World Sparrow Day!!!World Frog Day!!!";
+  natureHoliday.innerHTML = "World Sparrow Day!!! and World Frog Day!!!";
 }
 if ((`${month}` === `March`) & (`${day}` === `21`)) {
   let natureHoliday = document.querySelector("p");
@@ -118,14 +104,6 @@ if ((`${month}` === `March`) & (`${day}` === `22`)) {
 if ((`${month}` === `March`) & (`${day}` === `23`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Meteorological Day!!";
-}
-if ((`${month}` === `April`) & (`${day}` === `1`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "Fossil Fools Day!!";
-}
-if ((`${month}` === `April`) & (`${day}` === `5`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "International Day of Conscience!!";
 }
 if ((`${month}` === `April`) & (`${day}` === `7`)) {
   let natureHoliday = document.querySelector("p");
@@ -145,28 +123,7 @@ if ((`${month}` === `April`) & (`${day}` === `21`)) {
 }
 if ((`${month}` === `April`) & (`${day}` === `22`)) {
   let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "Mother Earth Day!!";
-}
-if ((`${month}` === `April`) & (`${day}` === `24`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML =
-    "International Day of Multilateralism and Diplomacy for Peace!!";
-}
-if ((`${month}` === `May`) & (`${day}` === `2`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "World Tuna Day!!!";
-}
-if ((`${month}` === `May`) & (`${day}` === `3`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "World Press Freedom Day!!";
-}
-if ((`${month}` === `May`) & (`${day}` === `14`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "International Migratory Bird Day!!!";
-}
-if ((`${month}` === `May`) & (`${day}` === `15`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "Endangered Species Day!!!";
+  natureHoliday.innerHTML = "Earth Day!!";
 }
 if ((`${month}` === `May`) & (`${day}` === `20`)) {
   let natureHoliday = document.querySelector("p");
@@ -190,26 +147,16 @@ if ((`${month}` === `June`) & (`${day}` === `5`)) {
 }
 if ((`${month}` === `June`) & (`${day}` === `8`)) {
   let natureHoliday = document.querySelector("p");
-  natureH;
-  oliday.innerHTML = "World Oceans Day!!";
-}
-if ((`${month}` === `June`) & (`${day}` === `15`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "Nature Photography Day!!Global Wind Day";
+  natureHoliday.innerHTML = "World Oceans Day!!";
 }
 if ((`${month}` === `June`) & (`${day}` === `17`)) {
   let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "World Day to Combat Desertification and Drought!!";
-}
-if ((`${month}` === `June`) & (`${day}` === `21`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "World Giraffe Day!!";
+  natureHoliday.innerHTML = "World Day to Combat Desertification!!";
 }
 if ((`${month}` === `June`) & (`${day}` === `22`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Rainforest Day!!";
 }
-
 if ((`${month}` === `June`) & (`${day}` === `29`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "International Day of the Tropics!!";
@@ -218,30 +165,14 @@ if ((`${month}` === `July`) & (`${day}` === `11`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Population Day!!";
 }
-if ((`${month}` === `July`) & (`${day}` === `26`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "International Mangrove Day!!";
-}
-if ((`${month}` === `July`) & (`${day}` === `29`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "World Tiger Day!!";
-}
 if ((`${month}` === `August`) & (`${day}` === `9`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML =
     "International Day of the World's Indigenous People!!";
 }
-if ((`${month}` === `August`) & (`${day}` === `10`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "World Lion Day!!";
-}
 if ((`${month}` === `August`) & (`${day}` === `12`)) {
   let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "World Elephant Day!!!International Youth Day!!";
-}
-if ((`${month}` === `August`) & (`${day}` === `19`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "International Orangutan Day!!!";
+  natureHoliday.innerHTML = "International Youth Day!!";
 }
 if ((`${month}` === `September`) & (`${day}` === `8`)) {
   let natureHoliday = document.querySelector("p");
@@ -252,39 +183,22 @@ if ((`${month}` === `September`) & (`${day}` === `16`)) {
   natureHoliday.innerHTML =
     "International Day for the Preservation of the Ozone Layer!!";
 }
-if ((`${month}` === `September`) & (`${day}` === `18`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "World Watr Monitoring Day!!";
-}
-if ((`${month}` === `September`) & (`${day}` === `19`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "World Cleanup Day!!";
-}
 if ((`${month}` === `September`) & (`${day}` === `21`)) {
   let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "International Day of Peace!!Zero Emissions Day";
-}
-if ((`${month}` === `September`) & (`${day}` === `22`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "World Rhino Day!!!World Car Free Day!!";
-}
-if ((`${month}` === `September`) & (`${day}` === `26`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "World Environmental Health Day!!";
+  natureHoliday.innerHTML = "International Day of Peace!!";
 }
 if ((`${month}` === `October`) & (`${day}` === `2`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Day for Farmed Animals!!!";
 }
+if ((`${month}` === `October`) & (`${day}` === `3`)) {
+  let natureHoliday = document.querySelector("p");
+  natureHoliday.innerHTML = "World Habitat Day!!";
+}
 if ((`${month}` === `October`) & (`${day}` === `4`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Animal Welfare Day!!";
 }
-if ((`${month}` === `October`) & (`${day}` === `7`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "World Habitat Day!!";
-}
-
 if ((`${month}` === `October`) & (`${day}` === `12`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Migratory Bird Day!!!";
@@ -315,25 +229,80 @@ if ((`${month}` === `December`) & (`${day}` === `11`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "International Mountain Day!!!";
 }
+
 function showWeather(response) {
   console.log(response.data);
+  //local time of measurements
+
   //local
   let local = response.data.name;
   let city = document.querySelector("#location");
   city.innerHTML = `${local}`;
+  //coordinates for uv and UV
+
   //description
   let description = response.data.weather[0].description;
   let weatherDescription = document.querySelector("#description");
   weatherDescription.innerHTML = `${description}`;
-  //temperature
+  //weatherIcon
+  let weatherIcon = response.data.weather[0].icon;
+  let weatherIconplace = document.querySelector("#weatherIcon");
+  weatherIconplace.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`
+  );
+
+  weatherIconplace.setAttribute("alt", `${description}`);
+
+  //temperature - physics
   let celsius = response.data.main.temp;
   let celsiusRound = Math.round(`${celsius}`);
-  let tempValueC = document.querySelector("#temp-value-C");
+  let tempValueC = document.querySelector("#temp-value");
   tempValueC.innerHTML = `${celsiusRound}ºC`;
   let fahrenheit = Math.round((`${celsius}` * 9) / 5 + 32);
-  let tempValueF = document.querySelector("#temp-value-F");
-  tempValueF.innerHTML = `${fahrenheit}ºF`;
-  //precipitation
+
+  function showC(event) {
+    event.preventDefault();
+    let tempValueC = document.querySelector("#temp-value");
+    tempValueC.innerHTML = `${celsiusRound}ºC`;
+  }
+  function showF(event) {
+    event.preventDefault();
+    let tempValueF = document.querySelector("#temp-value");
+    tempValueF.innerHTML = `${fahrenheit}ºF`;
+  }
+
+  let celsiusButton = document.querySelector("#C-converter");
+  celsiusButton.addEventListener("click", showC);
+
+  let fahrenheitButton = document.querySelector("#F-converter");
+  fahrenheitButton.addEventListener("click", showF);
+
+  //temperature - perception
+  let celsiusF = response.data.main.feels_like;
+  let celsiusFRound = Math.round(`${celsiusF}`);
+  let tempValueCF = document.querySelector("#feelTemp-value");
+  tempValueCF.innerHTML = `${celsiusFRound}ºC`;
+
+  let fahrenheitF = Math.round((`${celsiusF}` * 9) / 5 + 32);
+
+  function showCF(event) {
+    event.preventDefault();
+    let tempValueCF = document.querySelector("#feelTemp-value");
+    tempValueCF.innerHTML = `${celsiusFRound}ºC`;
+  }
+  function showFF(event) {
+    event.preventDefault();
+    let tempValueFF = document.querySelector("#feelTemp-value");
+    tempValueFF.innerHTML = `${fahrenheitF}ºF`;
+  }
+
+  let celsiusFButton = document.querySelector("#C-converter");
+  celsiusFButton.addEventListener("click", showCF);
+
+  let fahrenheitFButton = document.querySelector("#F-converter");
+  fahrenheitFButton.addEventListener("click", showFF);
+  //humidity
   let humidity = response.data.main.humidity;
   let humidValue = document.querySelector("#humid-value");
   humidValue.innerHTML = `${humidity}%`;
@@ -372,9 +341,9 @@ function showWeather(response) {
 ${windSpeed}m/s
 ${windDegrees}`;
   //UV index in progress
-}
 
-//images in progress
+  //images in progress
+}
 //special dates in progress
 //forecast in progress
 

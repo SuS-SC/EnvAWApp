@@ -15,36 +15,38 @@
 <body>
 <!--grid for current weather for current time and city-->
   <div class="container">
-    <div class="app">
-<div class="card">
-    <div class="container" class="locationTime">
+<div class="weatherAppWrapper">
+    <div class="weatherApp">
+<div class="card locationTime">
+    <div class="container">
   <div class="row">
-    <div class="col" id="location">
-  <h3>Where?
-  </h3>
-    </div>
-    <div class="w-100">
-    </div>
-    <div class="col">
+   <div class="col" id="location">
+          <h3> Where?</h3></div><span> <img src="media/blue-pin_640.png"  class="pin1" alt="blue pin"> </span>
+   <div class="w-100">
+    </div><span> <img src="media/blue-pin_640.png"  class="pin2" alt="blue pin"> </span>
+    <div class="col" id ="currentdate">
 <h5 id="current-date"></h5>
     </div>
   </div>
 <div class=w-100></div>
-
+    </div>
+</div>
+</br>
 <div class="container" class="currentWeatherInfo">
   <div class="row">
 <div class="card-group">
-  <div class="card">
-    <img src="media/sunnycolor.png" class="card-img-top" alt="Sunny Day">
+  <div class="card image">
+    <img src="media\icons\all.png" class="card-img" id="weatherIcon"alt="allIcons">
     <div class="card-body">
-      <h5 class="card-title text-center" id= "description"></h5>
+      <h5 class="card-title text-center" id= "description">Ready?</h5>
     </div>
   </div>
-  <div class="card text-center">
-    <div class="card-body">
-      <h5 class="card-title">
-        <ul class="weatherParameter">	
-          <li>Temperature: <span id="temp-value-C"></span>|<span id=temp-value-F></span>
+  <div class="card text-center notepad">
+    <div class="card-body"> 
+      <div class="card-title">
+        <span><button id="C-converter">C</button><button id="F-converter">F</button></span>
+        <ul class="weatherParameter">	 
+          <li>Temperature: <span id="temp-value"></span>
          </li>
 				  <li>
 					Humidity: <span id="humid-value"></span>
@@ -55,24 +57,29 @@
 				 <li> UV index: <span id= "uv-value"></span> 
          </li>
         </ul>
-      </h5>
+        
+      </div>
+<span id="feelTemp"><h4>Feels like: </br>
+<span id="feelTemp-value"></span></h4>
     </div>
     <div class="card-body text-center" id="natureDay">
       <p class="card-title"> Always a good time to plant a tree!</p>
       </div>
   </div>
-  <div class="card">
-    <img src="media/tree.png" class="card-img-top" alt="Tree">
+  <div class="card image" id="natureIcon">
+  <img src="media/tree.png">
   </div>
 </div>
 </div>
 </div>
-</div>
+
+    
+</br>
 <!-- grid for interactive forecast for next days and search for other places+footer-->
 <div class="container">
 <div class="row">
 <div class="col">
-<h5> Next days:</h5>
+<h5 class="nextDays">  <img src="media/ladybug_1280.png" class="ladybugIcon" width = "30px">Next days: </h5>
 </div>
 <div class="row w-100"></div>
 <div class="card-deck">
@@ -84,7 +91,7 @@
   </div>
   <div class="card width-auto">
 <img src="media/sunnycolor.png"  class="card-img-top" alt="Sunny Day">
-    <div class="card-body">
+    <div class="card-body"class="forecast">
      <a href=""> <h6 class="card-title text-center">Mon</h6> </a>
     </div>
   </div>
@@ -106,10 +113,9 @@
       <a href=""><h6 class="card-title text-center">Thu</h6></a>
     </div>
   </div>
-  <div class="col-auto">
+  <div class="col-auto"> 
+    <div class="searchBar">
 <div class="card width-auto">
-  <div class="searchBar">
-  <div class="card-body">
     <form id="city-form">
       <div class="input-group mb-2">
         <div class="input-group-prepend">
@@ -119,26 +125,25 @@
         </div>
         <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Type another city">
 <button type="submit" class="btn btn-outline-success" id="city-button">
-<img src="media/glass-305547_1280.png" width="20px">
-</button>
-</form></div> <button type="click" class="btn btn-outline-success"  class="currentLocation" id="current-location">
-<img src="media/tracker-1093167_1280.png" width="15px"> Current Location
-</button> </div>
-    
-<div class="row w-100"></div>
-<footer>
-  <span id="EnvAWAp">
-Environment Awareness Weather App.
-  </span>
+<img src="media/glass-305547_1280.png"  width="20px">
+</button></br><button type="click" class="btn btn-outline-success"  class="currentLocation" id="current-location">
+<img src="media/tracker-1093167_1280.png"  width="15px"> 
+</button> 
+</form>
+</div>
+</div>
+</div>
 </br>
-   <a href = "https://github.com/SuS-SC/EnvAWApp">Open-source code</a> by Susana Soares for <a href="https://www.shecodes.io/plus">SheCodes Plus.</a> 
+<div class= "footerWrapper"><footer>
+  <span id="EnvAWAp">Environment Awareness Weather App </span> </br>
+  <a href="#" target="blank"> Open-source code</a> by Susana Soares for <a href="https://www.shecodes.io/plus" target="blank">SheCodes Plus</a>
     </footer>
+    </div>
 </div>
 </div>
 </div>
 </div>
-</div>
-</div>
+</br>
 </div>
 </div>
 </div>
