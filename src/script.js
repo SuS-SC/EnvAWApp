@@ -44,190 +44,296 @@ date.innerHTML = `${weekDay}, ${day} ${month} ${year} ${timeHours}:${timeMinutes
 if ((`${month}` === `January`) & (`${day}` === `26`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "International Day of Education!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/education_640.jpg`;
+  educationDay.setAttribute("alt", `education`);
 }
 if ((`${month}` === `January`) & (`${day}` === `31`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "International Zebra Day!!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/zebra_640.jpg`;
+  educationDay.setAttribute("alt", `zebra`);
 }
 if ((`${month}` === `February`) & (`${day}` === `2`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Wetlands Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/wetlands_640.jpg`;
+  educationDay.setAttribute("alt", `wetland`);
 }
 if ((`${month}` === `February`) & (`${day}` === `15`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Hippopotamus Day!!!";
-}
-if ((`${month}` === `February`) & (`${day}` === `20`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "World Day of Social Justice!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/hippo_640.jpg`;
+  educationDay.setAttribute("alt", `hippo`);
 }
 
 if ((`${month}` === `February`) & (`${day}` === `27`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "International Polar Bear Day!!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/polar-bear_640.jpg`;
+  educationDay.setAttribute("alt", `polar bear`);
 }
 
 if ((`${month}` === `March`) & (`${day}` === `1`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "International Day of Action for Rivers!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/river_640.jpg`;
+  educationDay.setAttribute("alt", `river`);
 }
+
 if ((`${month}` === `March`) & (`${day}` === `3`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Wildlife Day!!";
-}
-if ((`${month}` === `March`) & (`${day}` === `8`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "International Women's Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/wildlife_640.jpg`;
+  educationDay.setAttribute("alt", `wildlife`);
 }
 
-if ((`${month}` === `March`) & (`${day}` === `15`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "World Consumer Rights Day!!";
-}
 if ((`${month}` === `March`) & (`${day}` === `18`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "Global Recycling Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/recycle_640.jpg`;
+  educationDay.setAttribute("alt", `recycle`);
 }
 if ((`${month}` === `March`) & (`${day}` === `20`)) {
   let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "World Sparrow Day!!! and World Frog Day!!!";
+  natureHoliday.innerHTML = "World Frog Day!!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/frog_640.jpg`;
+  educationDay.setAttribute("alt", `frog`);
 }
 if ((`${month}` === `March`) & (`${day}` === `21`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML =
-    "Today is International Day of Forests!! and World Planting Day!! Go plant a tree!";
+    "International Day of Forests!! and World Planting Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/planting_640.jpg`;
+  educationDay.setAttribute("alt", `planting`);
 }
 if ((`${month}` === `March`) & (`${day}` === `22`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Water Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/drop_640.jpg`;
+  educationDay.setAttribute("alt", `water`);
+
 }
 if ((`${month}` === `March`) & (`${day}` === `23`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Meteorological Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/meteo_640.jpg`;
+  educationDay.setAttribute("alt", `meteoreology`);
 }
 if ((`${month}` === `April`) & (`${day}` === `7`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Health Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/health_640.jpg`;
+  educationDay.setAttribute("alt", `health`);
+
 }
 if ((`${month}` === `April`) & (`${day}` === `10`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "Arbor Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/tree_640.jpg`;
+  educationDay.setAttribute("alt", `arboring`);
 }
 if ((`${month}` === `April`) & (`${day}` === `18`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Heritage Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/heritage_640.jpg`;
+  educationDay.setAttribute("alt", `heritage`);
 }
-if ((`${month}` === `April`) & (`${day}` === `21`)) {
+if ((`${month}` === `May`) & (`${day}` === `16`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Fish Migration Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/fish_640.jpg`;
+  educationDay.setAttribute("alt", `migrating fish`);
 }
 if ((`${month}` === `April`) & (`${day}` === `22`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "Earth Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/earth_640.jpg`;
+  educationDay.setAttribute("alt", `earth`);
 }
 if ((`${month}` === `May`) & (`${day}` === `20`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Bee Day!!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/bee_640.jpg`;
+  educationDay.setAttribute("alt", `bee`);
 }
-if ((`${month}` === `May`) & (`${day}` === `21`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "World Fish Migration Day!!!";
-}
+
 if ((`${month}` === `May`) & (`${day}` === `22`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "International Day for Biological Diversity!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/biodiversity_640.jpg`;
+  educationDay.setAttribute("alt", `biodiversity`);
 }
 if ((`${month}` === `May`) & (`${day}` === `23`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Turtle Day!!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/turtle_640.jpg`;
+  educationDay.setAttribute("alt", `turtle`);
 }
 if ((`${month}` === `June`) & (`${day}` === `5`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Environment Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/environment_640.jpg`;
+  educationDay.setAttribute("alt", `environment`);
 }
 if ((`${month}` === `June`) & (`${day}` === `8`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Oceans Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/ocean_640.jpg`;
+  educationDay.setAttribute("alt", `ocean`);
 }
 if ((`${month}` === `June`) & (`${day}` === `17`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Day to Combat Desertification!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/desertification_640.jpg`;
+  educationDay.setAttribute("alt", `desertification`);
 }
 if ((`${month}` === `June`) & (`${day}` === `22`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Rainforest Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/rainforest_640.jpg`;
+  educationDay.setAttribute("alt", `rainforest`);
 }
 if ((`${month}` === `June`) & (`${day}` === `29`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "International Day of the Tropics!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/tropics_640.jpg`;
+  educationDay.setAttribute("alt", `tropics`);
 }
 if ((`${month}` === `July`) & (`${day}` === `11`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Population Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/population_640.jpg`;
+  educationDay.setAttribute("alt", `population`);
 }
 if ((`${month}` === `August`) & (`${day}` === `9`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML =
     "International Day of the World's Indigenous People!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/indigenous_640.jpg`;
+  educationDay.setAttribute("alt", `indigenous`);
 }
 if ((`${month}` === `August`) & (`${day}` === `12`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "International Youth Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/youth_640.jpg`;
+  educationDay.setAttribute("alt", `youth`);
 }
-if ((`${month}` === `September`) & (`${day}` === `8`)) {
-  let natureHoliday = document.querySelector("p");
-  natureHoliday.innerHTML = "International Literacy Day!!";
-}
+
 if ((`${month}` === `September`) & (`${day}` === `16`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML =
     "International Day for the Preservation of the Ozone Layer!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/ozone_640.jpg`;
+  educationDay.setAttribute("alt", `ozone`);
 }
 if ((`${month}` === `September`) & (`${day}` === `21`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "International Day of Peace!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/peace_640.jpg`;
+  educationDay.setAttribute("alt", `peace`);
 }
 if ((`${month}` === `October`) & (`${day}` === `2`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Day for Farmed Animals!!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/farm_640.jpg`;
+  educationDay.setAttribute("alt", `farm animals`);
+}
 }
 if ((`${month}` === `October`) & (`${day}` === `3`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Habitat Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/habitat_640.jpg`;
+  educationDay.setAttribute("alt", `habitat`);
 }
 if ((`${month}` === `October`) & (`${day}` === `4`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Animal Welfare Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/welfare_640.jpg`;
+  educationDay.setAttribute("alt", `animal welfare`);
 }
 if ((`${month}` === `October`) & (`${day}` === `12`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Migratory Bird Day!!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/migration-bird_640.jpg`;
+  educationDay.setAttribute("alt", `migrating bird`);
 }
 if ((`${month}` === `October`) & (`${day}` === `13`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML =
     "International Day for Natural Disaster Reduction!!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/disaster_640.jpg`;
+  educationDay.setAttribute("alt", `natural disaster`);
 }
 if ((`${month}` === `October`) & (`${day}` === `16`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "World Food Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/food_640.jpg`;
+  educationDay.setAttribute("alt", `food`);
 }
 if ((`${month}` === `November`) & (`${day}` === `6`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML =
     "International Day for Preventing the Exploitation of the Environment in War and Armed Conflict!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/war_640.jpg`;
+  educationDay.setAttribute("alt", `war`);
 }
 if ((`${month}` === `December`) & (`${day}` === `5`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "International Volunteer Day!! World Soil Day!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/soil_640.jpg`;
+  educationDay.setAttribute("alt", `soil`);
 }
 if ((`${month}` === `December`) & (`${day}` === `10`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "Human Rights Day!!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/huma-rights.png`;
+  educationDay.setAttribute("alt", `human rights`);
 }
 if ((`${month}` === `December`) & (`${day}` === `11`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "International Mountain Day!!!";
+  let educationDay = document.querySelector("#natureIcon");
+  educationDay.src = `/media/mountain_640.jpg`;
+  educationDay.setAttribute("alt", `mountain`);
 }
 
 function showWeather(response) {
