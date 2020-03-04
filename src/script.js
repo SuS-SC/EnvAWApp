@@ -41,7 +41,7 @@ let date = document.querySelector("#current-date");
 date.innerHTML = `${weekDay}, ${day} ${month} ${year} ${timeHours}:${timeMinutes}`;
 
 //Holidays of Nature - transform in an array and call it (in progress)
-if ((`${month}` === `March`) & (`${day}` === `4`)) {
+if ((`${month}` === `January`) & (`${day}` === `26`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML = "International Day of Education!!";
   let educationDay = document.querySelector("#natureIcon");
@@ -353,10 +353,7 @@ function showWeather(response) {
   //weatherIcon
   let weatherIcon = response.data.weather[0].icon;
   let weatherIconplace = document.querySelector("#weatherIcon");
-  weatherIconplace.setAttribute(
-    "src",
-    `http://openweathermap.org/img/wn/${weatherIcon}@2x.png`
-  );
+  weatherIconplace.setAttribute("src", `/media/icons/${weatherIcon}.png`);
 
   weatherIconplace.setAttribute("alt", `${description}`);
 
