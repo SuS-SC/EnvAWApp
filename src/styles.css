@@ -7,7 +7,7 @@ body {
   border-style: ridge;
   border-color: #865324;
   border-width: 10px;
-  background-image: url(/../media/cork-board.jpg);
+  background-image: url(/media/cork-board.jpg);
   background-size: initial;
 }
 
@@ -31,7 +31,7 @@ body {
   border-radius: 12px;
 }
 .card.notepad {
-  background-image: url(media/cork-board.jpg);
+  background-image: url(/media/notepad.png);
   display: block;
   min-height: 100%;
   background-repeat: no-repeat;
@@ -84,10 +84,14 @@ h5 {
 .weatherIcon {
   display: block;
   margin: 0 auto;
+  width: 360px;
+  height: 460px;
 }
 .natureIcon {
   display: block;
   margin: 0 auto;
+  width: 360px;
+  height: 460px;
 }
 .nextDays {
   color: #633e1c;
@@ -153,7 +157,7 @@ form {
   color: #633e1c;
   margin: 0px;
   padding: 10px 25px 35px 25px;
-  background-image: url(/../media/green-postit.png);
+  background-image: url(/media/green-postit.png);
   background-position: center;
   background-size: 100% 100%;
 }
