@@ -33,7 +33,7 @@ body {
 .card.notepad {
   background-image: url(/media/notepad.png);
   display: block;
-  min-height: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   border-right-color: #dadde1;
   border-left-color: #dadde1;
@@ -78,7 +78,7 @@ h5 {
   background-color: rgb(3, 161, 201);
 }
 #description {
-  color: #23a2a;
+  color: #23a2a7;
   text-transform: capitalize;
 }
 .weatherIcon {
