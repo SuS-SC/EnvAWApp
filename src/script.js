@@ -499,8 +499,9 @@ function citySearch(event) {
     location.reload();
   }
   apiUrl = `api.openweathermap.org/data/2.5/forecast?q=${searchCity.value}&appid=${apiWeatherKey}&units=metric`;
-  axios - get(`apiUrl`).then(showForecast);
+  axios.get(`${apiUrl}`).then(showForecast);
 }
+
 let cityForm = document.querySelector("form");
 cityForm.addEventListener("submit", citySearch);
 
