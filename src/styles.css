@@ -33,7 +33,7 @@ body {
 .card.notepad {
   background-image: url(/media/notepad.png);
   display: block;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   border-right-color: #dadde1;
   border-left-color: #dadde1;
