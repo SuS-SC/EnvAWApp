@@ -470,34 +470,19 @@ ${windDegrees}`;
 function showForecast(response) {
   let forecastIcon1 = response.data.list[0].weather[0].icon;
   let forecastDay1img = document.querySelector("#forecast1");
-  forecastDay1img.setAttribute(
-    "src",
-    `/media/weather_Icons/${forecastIcon1}.png`
-  );
+  forecastDay1img.setAttribute("src", `/media/icons/${forecastIcon1}.png`);
   let forecastIcon2 = response.data.list[8].weather[0].icon;
   let forecastDay2img = document.querySelector("#forecast2");
-  forecastDay2img.setAttribute(
-    "src",
-    `/media/weather_Icons/${forecastIcon2}.png`
-  );
+  forecastDay2img.setAttribute("src", `/media/icons/${forecastIcon2}.png`);
   let forecastIcon3 = response.data.list[16].weather[0].icon;
   let forecastDay3img = document.querySelector("#forecast3");
-  forecastDay3img.setAttribute(
-    "src",
-    `/media/weather_Icons/${forecastIcon3}.png`
-  );
+  forecastDay3img.setAttribute("src", `/media/icons/${forecastIcon3}.png`);
   let forecastIcon4 = response.data.list[24].weather[0].icon;
   let forecastDay4img = document.querySelector("#forecast4");
-  forecastDay4img.setAttribute(
-    "src",
-    `/media/weather_Icons/${forecastIcon4}.png`
-  );
+  forecastDay4img.setAttribute("src", `/media/icons/${forecastIcon4}.png`);
   let forecastIcon5 = response.data.list[32].weather[0].icon;
   let forecastDay5img = document.querySelector("#forecast5");
-  forecastDay5img.setAttribute(
-    "src",
-    `/media/weather_Icons/${forecastIcon5}.png`
-  );
+  forecastDay5img.setAttribute("src", `/media/icons/${forecastIcon5}.png`);
 }
 
 function citySearch(event) {
