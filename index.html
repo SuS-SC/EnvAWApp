@@ -54,8 +54,6 @@
 			    <li>
 					Wind: <span id ="wind-values"></span>
 					</li>
-				 <li> UV index: <span id= "uv-value"></span> 
-         </li>
         </ul>
       </div>
 <span id="feelTemp"><h4>Feels like: </br>
@@ -83,33 +81,33 @@
 <div class="row w-100"></div>
 <div class="card-deck">
   <div class="card width-auto">
- <img src="media/sunnycolor.png" class="card-img-top" alt="Sunny Day">
+ <img src="media/flowerred_640.png" id ="forecast1" class="card-img-top" alt="red flower">
     <div class="card-body">
-      <a href="" ><h6 class="card-title text-center">Sun</h6></a>
+      <h6 class="card-title text-center" id="today"></h6>
     </div>
   </div>
   <div class="card width-auto">
-<img src="media/sunnycolor.png"  class="card-img-top" alt="Sunny Day">
-    <div class="card-body"class="forecast">
-     <a href=""> <h6 class="card-title text-center">Mon</h6> </a>
+<img src="media/flowerorange_640.png"  id="forecast2" class="card-img-top" alt="orange flower">
+    <div class="card-body">
+     <h6 class="card-title text-center" id="tomorrow"></h6> 
     </div>
   </div>
   <div class="card width-auto">
-     <img src="media/cloudycolodayr.png" class="card-img-top" alt="Cloudy Day">
+     <img src="media/flowerwhite_640.png"  id="forecast3" class="card-img-top" alt="white flower">
     <div class="card-body">
-      <a href=""><h6 class="card-title text-center">Tue</h6></a>
+      <h6 class="card-title text-center" id="second-day" ></h6>
     </div>
   </div>
 <div class="card width-auto">
- <img src="media/supercloudycolorday.png" class="card-img-top" alt="Super Cloudy Day">
+ <img src="media/flowerviolet_640.png" id="forecast4" class="card-img-top" alt="violet flower">
     <div class="card-body">
-      <a href=""><h6 class="card-title text-center">Wed</h6></a>
+      <h6 class="card-title text-center" id="third-day"></h6>
     </div>
   </div>
 <div class="card width-auto">
-   <img src="media/cloudyraincolorday.png" class="card-img-top" alt="Cloudy Rainy Day">
+   <img src="media/floweryellow_640.png" id="forecast5" class="card-img-top" alt="yellow flower">
     <div class="card-body">
-      <a href=""><h6 class="card-title text-center">Thu</h6></a>
+      <h6 class="card-title text-center" id="forth-day"></h6>
     </div>
   </div>
   <div class="col-auto"> 
@@ -119,7 +117,7 @@
       <div class="input-group mb-2">
         <div class="input-group-prepend">
           <div class="input-group-text">
-<img src="media/keyboard-24186_1280.png" width=35px">
+<img src="media/keyboard-24186_1280.png" width="35px">
           </div>
         </div>
         <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Type another city">

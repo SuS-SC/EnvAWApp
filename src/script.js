@@ -40,6 +40,32 @@ if (timeMinutes < 10) {
 let date = document.querySelector("#current-date");
 date.innerHTML = `${weekDay}, ${day} ${month} ${year} ${timeHours}:${timeMinutes}`;
 
+//display days of week for forecast
+let forecastdayToday = weekDay.substring(0, 3);
+let forecastday = document.querySelector("#today");
+forecastday.innerHTML = `${forecastdayToday}`;
+
+let tomorrow = new Date();
+tomorrow.setDate(tomorrow.getDate() + 1);
+let forecastDay1 = document.querySelector("#tomorrow");
+forecastDay1.innerHTML = `${tomorrow}`.substring(0, 3);
+
+let secondDay = new Date();
+secondDay.setDate(secondDay.getDate() + 2);
+let forecastDay2 = document.querySelector("#second-day");
+forecastDay2.innerHTML = `${secondDay}`.substring(0, 3);
+
+let thirdDay = new Date();
+thirdDay.setDate(thirdDay.getDate() + 3);
+
+let forecastDay3 = document.querySelector("#third-day");
+forecastDay3.innerHTML = `${thirdDay}`.substring(0, 3);
+
+let forthDay = new Date();
+forthDay.setDate(forthDay.getDate() + 4);
+let forecastDay4 = document.querySelector("#forth-day");
+forecastDay4.innerHTML = `${forthDay}`.substring(0, 3);
+
 //Holidays of Nature - transform in an array and call it (in progress)
 if ((`${month}` === `January`) & (`${day}` === `26`)) {
   let natureHoliday = document.querySelector("p");
@@ -337,24 +363,20 @@ if ((`${month}` === `December`) & (`${day}` === `11`)) {
 }
 
 function showWeather(response) {
-  console.log(response.data);
-  //local time of measurements
-
   //local
   let local = response.data.name;
   let city = document.querySelector("#location");
   city.innerHTML = `${local}`;
-  //coordinates for uv and UV
 
   //description
   let description = response.data.weather[0].description;
   let weatherDescription = document.querySelector("#description");
   weatherDescription.innerHTML = `${description}`;
+
   //weatherIcon
   let weatherIcon = response.data.weather[0].icon;
   let weatherIconplace = document.querySelector("#weatherIcon");
   weatherIconplace.setAttribute("src", `/media/icons/${weatherIcon}.png`);
-
   weatherIconplace.setAttribute("alt", `${description}`);
 
   //temperature - physics
@@ -386,9 +408,7 @@ function showWeather(response) {
   let celsiusFRound = Math.round(`${celsiusF}`);
   let tempValueCF = document.querySelector("#feelTemp-value");
   tempValueCF.innerHTML = `${celsiusFRound}ºC`;
-
   let fahrenheitF = Math.round((`${celsiusF}` * 9) / 5 + 32);
-
   function showCF(event) {
     event.preventDefault();
     let tempValueCF = document.querySelector("#feelTemp-value");
@@ -405,10 +425,12 @@ function showWeather(response) {
 
   let fahrenheitFButton = document.querySelector("#F-converter");
   fahrenheitFButton.addEventListener("click", showFF);
+
   //humidity
   let humidity = response.data.main.humidity;
   let humidValue = document.querySelector("#humid-value");
   humidValue.innerHTML = `${humidity}%`;
+
   ///wind
   let windSpeed = response.data.wind.speed;
   let windDegrees = response.data.wind.deg;
@@ -443,12 +465,40 @@ function showWeather(response) {
   windValues.innerHTML = `
 ${windSpeed}m/s
 ${windDegrees}`;
-  //UV index in progress
-
-  //images in progress
 }
-//special dates in progress
-//forecast in progress
+
+function showForecast(response) {
+  let forecastIcon1 = response.data.list[0].weather[0].icon;
+  let forecastDay1img = document.querySelector("#forecast1");
+  forecastDay1img.setAttribute(
+    "src",
+    `/media/weather_Icons/${forecastIcon1}.png`
+  );
+  let forecastIcon2 = response.data.list[8].weather[0].icon;
+  let forecastDay2img = document.querySelector("#forecast2");
+  forecastDay2img.setAttribute(
+    "src",
+    `/media/weather_Icons/${forecastIcon2}.png`
+  );
+  let forecastIcon3 = response.data.list[16].weather[0].icon;
+  let forecastDay3img = document.querySelector("#forecast3");
+  forecastDay3img.setAttribute(
+    "src",
+    `/media/weather_Icons/${forecastIcon3}.png`
+  );
+  let forecastIcon4 = response.data.list[24].weather[0].icon;
+  let forecastDay4img = document.querySelector("#forecast4");
+  forecastDay4img.setAttribute(
+    "src",
+    `/media/weather_Icons/${forecastIcon4}.png`
+  );
+  let forecastIcon5 = response.data.list[32].weather[0].icon;
+  let forecastDay5img = document.querySelector("#forecast5");
+  forecastDay5img.setAttribute(
+    "src",
+    `/media/weather_Icons/${forecastIcon5}.png`
+  );
+}
 
 function citySearch(event) {
   event.preventDefault();
@@ -463,6 +513,8 @@ function citySearch(event) {
     alert("Please type a city");
     location.reload();
   }
+  apiUrl = `api.openweathermap.org/data/2.5/forecast?q=${searchCity.value}&appid=${apiWeatherKey}&units=metric`;
+  axios - get(`apiUrl`).then(showForecast);
 }
 let cityForm = document.querySelector("form");
 cityForm.addEventListener("submit", citySearch);
