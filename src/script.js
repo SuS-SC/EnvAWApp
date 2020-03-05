@@ -332,7 +332,7 @@ if ((`${month}` === `October`) & (`${day}` === `16`)) {
   educationDay.src = `/media/food_640.jpg`;
   educationDay.setAttribute("alt", `food`);
 }
-if ((`${month}` === `March`) & (`${day}` === `5`)) {
+if ((`${month}` === `November`) & (`${day}` === `6`)) {
   let natureHoliday = document.querySelector("p");
   natureHoliday.innerHTML =
     "International Day for Preventing the Exploitation of the Environment in War and Armed Conflict!!";
