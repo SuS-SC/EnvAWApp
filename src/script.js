@@ -498,7 +498,7 @@ function citySearch(event) {
     alert("Please type a city");
     location.reload();
   }
-  apiUrl = `api.openweathermap.org/data/2.5/forecast?q=${searchCity.value}&appid=${apiWeatherKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${searchCity.value}&appid=${apiWeatherKey}&units=metric`;
   axios.get(`${apiUrl}`).then(showForecast);
 }
 
