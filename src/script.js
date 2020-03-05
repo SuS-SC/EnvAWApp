@@ -403,7 +403,7 @@ function showWeather(response) {
   let fahrenheitButton = document.querySelector("#F-converter");
   fahrenheitButton.addEventListener("click", showF);
 
-  //temperature - perception
+  //temperature - perception/Feeling
   let celsiusF = response.data.main.feels_like;
   let celsiusFRound = Math.round(`${celsiusF}`);
   let tempValueCF = document.querySelector("#feelTemp-value");
