@@ -510,6 +510,9 @@ function localWeather(position) {
   let lon = position.coords.longitude;
   let urlPosition = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=c55a735461d1622ed3b65499c272f01c&units=metric`;
   axios.get(`${urlPosition}`).then(showWeather);
+
+  let urlPositionForecast = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=c55a735461d1622ed3b65499c272f01c&units=metric`;
+  axios.get(`${urlPositionForecast}`).then(showForecast);
 }
 
 function retrieveLocal(position) {
