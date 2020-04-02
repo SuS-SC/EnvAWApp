@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Environment Awareness Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Fjord+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.dd855970.css">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script src="/styles.dd855970.js"></script></head>
+<!-- App -->
+<body>
+<!--grid for current weather for current time and city-->
+  <div class="container">
+<div class="weatherAppWrapper">
+    <div class="weatherApp">
+<div class="card locationTime">
+    <div class="container">
+  <div class="row">
+   <div class="col" id="location">
+          <h3> Where?</h3></div><span> <img src="/blue-pin_640.e4b06ff8.png" class="pin1" alt="blue pin"> </span>
+   <div class="w-100">
+    </div><span> <img src="/blue-pin_640.e4b06ff8.png" class="pin2" alt="blue pin"> </span>
+    <div class="col" id="currentdate">
+<h5 id="current-date"></h5>
+    </div>
+  </div>
+<div class="w-100"></div>
+    </div>
+</div>
+<br>
+<div class="container">
+  <div class="row">
+<div class="card-group">
+  <div class="card image">
+    <img src="/all.ed981255.png" class="card-img" id="weatherIcon" alt="allIcons">
+    <div class="card-body">
+      <h5 class="card-title text-center" id="description">Ready?</h5>
+    </div>
+  </div>
+  <div class="card text-center notepad">
+    <div class="card-body"> 
+      <div class="card-title">
+        <span><button id="C-converter">C</button><button id="F-converter">F</button></span>
+        <ul class="weatherParameter">	 
+          <li>Temperature: <span id="temp-value"></span>
+         </li>
+				  <li>
+					Humidity: <span id="humid-value"></span>
+					</li>
+			    <li>
+					Wind: <span id="wind-values"></span>
+					</li>
+        </ul>
+      </div>
+<span id="feelTemp"><h4>Feels like: <br>
+<span id="feelTemp-value"></span></h4>
+    </span></div>
+    <div class="card-body text-center" id="natureDay">
+      <p class="card-title"> Always a good time to plant a tree!</p>
+      </div>
+  </div>
+  <div class="card image">
+  <img src="/tree.ce9cc7f6.png" id="natureIcon" alt="tree">
+  </div>
+</div>
+</div>
+</div>
+
+    
+<br>
+<!-- grid for interactive forecast for next days and search for other places+footer-->
+<div class="container">
+<div class="row">
+<div class="col">
+<h5 class="nextDays">  <img src="/ladybug_1280.85c1fe35.png" class="ladybugIcon" width="30px">Next days: </h5>
+</div>
+<div class="row w-100"></div>
+<div class="card-deck">
+  <div class="card width-auto">
+ <img src="/flowerred_640.fc572d06.png" id="forecast1" class="card-img-top" alt="red flower">
+    <div class="card-body">
+      <h6 class="card-title text-center" id="today"></h6>
+    </div>
+  </div>
+  <div class="card width-auto">
+<img src="/flowerorange_640.27a075e9.png" id="forecast2" class="card-img-top" alt="orange flower">
+    <div class="card-body">
+     <h6 class="card-title text-center" id="tomorrow"></h6> 
+    </div>
+  </div>
+  <div class="card width-auto">
+     <img src="/flowerwhite_640.07ebef22.png" id="forecast3" class="card-img-top" alt="white flower">
+    <div class="card-body">
+      <h6 class="card-title text-center" id="second-day"></h6>
+    </div>
+  </div>
+<div class="card width-auto">
+ <img src="/flowerviolet_640.379713df.png" id="forecast4" class="card-img-top" alt="violet flower">
+    <div class="card-body">
+      <h6 class="card-title text-center" id="third-day"></h6>
+    </div>
+  </div>
+<div class="card width-auto">
+   <img src="/floweryellow_640.efe0f63a.png" id="forecast5" class="card-img-top" alt="yellow flower">
+    <div class="card-body">
+      <h6 class="card-title text-center" id="forth-day"></h6>
+    </div>
+  </div>
+  <div class="col-auto"> 
+    <div class="searchBar">
+<div class="card width-auto">
+    <form id="city-form">
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+<img src="/keyboard-24186_1280.7f0fff53.png" width="35px">
+          </div>
+        </div>
+        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Type another city">
+<button type="submit" class="btn btn-outline-success" id="city-button">
+<img src="/glass-305547_1280.62272847.png" width="20px">
+</button><br><button type="click" class="btn btn-outline-success" id="current-location">
+<img src="/tracker-1093167_1280.ae1439d1.png" width="15px"> 
+</button> 
+</div></form>
+</div>
+</div>
+</div>
+<br>
+<div class="footerWrapper"><footer>
+  <span id="EnvAWAp">Environment Awareness Weather App </span> <br>
+  <a href="https://github.com/SuS-SC/EnvAWApp" target="blank"> Open-source code</a> by Susana Soares for <a href="https://www.shecodes.io/plus" target="blank">SheCodes Plus</a>
+    </footer>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<br>
+</div>
+</div>
+
+<script src="/script.baf0e655.js"></script>
+</body>
+</html>
